@@ -1,0 +1,15 @@
+The file content of our project is the following:
+    1. data/ directory                   - contains the dataset in the raw .csv form. Emails used for future prediction are not included, as they are our own personal emails.
+    2. models/                           - contains the model files (in pickle format) along with JSON files with the chosen hyper-parameters. A vectorizer used for future email prediction saved here as well.
+    3. SVM.ipynb                         - represents SVM model experimentation.
+    4. MLP.ipynb                         - represents MLP model experimentation.
+    5. LogReg.ipynb                      - represents Logistic Regression model experimentation and visualizations.
+    6. Preprocessing.ipynb               - represents the pre-processing notebook
+    7. Process_email.ipynb               - represents the notebook for processing and classifying new emails (as .eml files)
+
+The execution is straightforward:
+    1. Preprocessing.ipynb has to be executed fully in order to create a data_cleaned.csv file from data.csv
+    2. Any model notebook (SVM, LogReg, MLP) or Process_email.ipynb can be ran fully         
+    3. For Process_email.ipynb to run on any email fail, its path has to be provided in the last cell (Main) of the notebook and then the whole notebook should be executed.
+Note that all the cells but the last need to be executed only once and only the Main should be executed when the email file is changed.
+
